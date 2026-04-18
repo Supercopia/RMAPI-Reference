@@ -47,6 +47,9 @@ nav:
     - Map0: tree-map0.md
     - Map1: tree-map1.md
 
+extra_css:
+  - stylesheets/trees.css
+
 markdown_extensions:
   - tables
   - fenced_code

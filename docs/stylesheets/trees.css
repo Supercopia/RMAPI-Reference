@@ -1,0 +1,67 @@
+/* Compact collapsible tree styling */
+
+/* Reduce padding and margins on details elements */
+details {
+  margin: 0.1em 0 0.1em 1.2em !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+
+details summary {
+  padding: 0.15em 0 !important;
+  margin: 0 !important;
+  cursor: pointer;
+  list-style: disclosure-closed;
+  font-size: 0.95em;
+}
+
+details[open] > summary {
+  list-style: disclosure-open;
+}
+
+/* Remove the default marker styling from mkdocs-material */
+details summary::marker {
+  font-size: 0.8em;
+}
+
+/* Compact leaf items - force one per line */
+details > ul {
+  margin: 0 !important;
+  padding-left: 1.2em !important;
+}
+
+details > ul > li,
+details > p > code,
+details li {
+  display: list-item !important;
+  margin: 0.05em 0 !important;
+  padding: 0 !important;
+  font-size: 0.95em;
+}
+
+/* Make inline leaf items (- `Name`) stack vertically */
+details > p {
+  margin: 0 !important;
+  padding-left: 1.2em !important;
+  line-height: 1.6;
+}
+
+/* Each code item on its own line */
+details > p > code {
+  display: block !important;
+  margin: 0.1em 0 !important;
+  width: fit-content;
+}
+
+/* Add a subtle left border to show hierarchy depth */
+details[open] {
+  border-left: 1px solid rgba(128, 128, 128, 0.2) !important;
+  padding-left: 0.4em !important;
+}
+
+/* Tighten the top-level details */
+details > details {
+  margin-left: 0.8em !important;
+}
