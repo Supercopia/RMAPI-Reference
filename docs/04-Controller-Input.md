@@ -41,12 +41,12 @@ Same methods, just replace `RightController` with `LeftController`:
 
 | Method | Returns | What it reads |
 |--------|---------|---------------|
-| `Calls.ControllerMap.LeftController.GetTrigger()` | `float` | Left trigger |
-| `Calls.ControllerMap.LeftController.GetGrip()` | `float` | Left grip |
-| `Calls.ControllerMap.LeftController.GetPrimary()` | `float` | Left X button |
-| `Calls.ControllerMap.LeftController.GetSecondary()` | `float` | Left Y button |
-| `Calls.ControllerMap.LeftController.GetJoystick()` | `Vector2` | Left joystick XY |
-| `Calls.ControllerMap.LeftController.GetJoystickClick()` | `float` | Left stick pressed |
+| `Calls.ControllerMap.LeftController.GetTrigger()` | `float` (0.0 - 1.0) | Left trigger squeeze |
+| `Calls.ControllerMap.LeftController.GetGrip()` | `float` (0.0 - 1.0) | Left grip squeeze |
+| `Calls.ControllerMap.LeftController.GetPrimary()` | `float` (0.0 or 1.0) | Left X button |
+| `Calls.ControllerMap.LeftController.GetSecondary()` | `float` (0.0 or 1.0) | Left Y button |
+| `Calls.ControllerMap.LeftController.GetJoystick()` | `Vector2` (-1 to 1) | Left joystick XY |
+| `Calls.ControllerMap.LeftController.GetJoystickClick()` | `float` (0.0 or 1.0) | Left stick pressed |
 
 **Example:**
 ```csharp

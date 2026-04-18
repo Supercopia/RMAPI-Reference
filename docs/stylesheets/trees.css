@@ -65,3 +65,8 @@ details[open] {
 details > details {
   margin-left: 0.8em !important;
 }
+
+/* Hide the edit pencil icon on tree pages — they're generated, not hand-edited */
+a.md-content__button {
+  display: none !important;
+}
