@@ -1,0 +1,60 @@
+site_name: RMAPI Reference
+site_description: Beginner-friendly reference for the RumbleModdingAPI
+site_url: ""
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Getting Started: 01-Getting-Started.md
+  - Events: 02-Events.md
+  - Game Queries: 03-Game-Queries.md
+  - Controller Input: 04-Controller-Input.md
+  - UI Creation: 05-UI-Creation.md
+  - Asset Bundles: 06-Asset-Bundles.md
+  - Audio: 07-Audio.md
+  - Networking: 08-Networking.md
+  - GameObject Registry: 09-GameObject-Registry.md
+  - RumbleMod Base Class: 10-RumbleMod-Base.md
+  - Object Trees:
+    - DDOL: tree-ddol.md
+    - Gym: tree-gym.md
+    - Park: tree-park.md
+    - Map0: tree-map0.md
+    - Map1: tree-map1.md
+
+markdown_extensions:
+  - tables
+  - fenced_code
+  - codehilite
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
