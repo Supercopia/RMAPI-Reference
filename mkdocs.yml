@@ -19,6 +19,7 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+  custom_dir: docs/overrides
   features:
     - navigation.instant
     - navigation.tracking

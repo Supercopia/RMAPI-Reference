@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block header %}
+  {{ super() }}
+  <style>
+    .md-header__kofi {
+      display: flex;
+      align-items: center;
+      margin-right: 0.4rem;
+    }
+    .md-header__kofi a {
+      color: white;
+      display: flex;
+      align-items: center;
+      font-size: 0.7rem;
+      opacity: 0.7;
+      transition: opacity 0.2s;
+      text-decoration: none;
+    }
+    .md-header__kofi a:hover {
+      opacity: 1;
+    }
+    .md-header__kofi svg {
+      width: 1.2rem;
+      height: 1.2rem;
+      margin-right: 0.3rem;
+      fill: currentColor;
+    }
+  </style>
+  <script>
+    // Insert Ko-fi link into the header bar, before the theme toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      var header = document.querySelector('.md-header__inner');
+      if (!header) return;
+      var kofi = document.createElement('div');
+      kofi.className = 'md-header__kofi';
+      kofi.innerHTML = '<a href="https://ko-fi.com/ulvakskillz" target="_blank" rel="noopener" title="Support UlvakSkillz on Ko-fi"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.011 3.976-4.011 3.976s-2.418-2.668-3.329-3.976c-.936-1.381-.636-3.27.482-3.876 1.092-.582 2.482-.137 3.089.824.596-.961 1.997-1.406 3.089-.824 1.117.607 1.418 2.495.68 3.876zM21.059 12.22c-1.054.516-2.079.301-2.079.301V5.895h1.675c.922.265 1.426 2.009 1.058 3.834-.191.959-.657 1.975-.654 2.491z"/></svg>Ko-fi</a>';
+      // Insert before the last items (search, theme toggle)
+      var options = header.querySelector('.md-header__option') || header.querySelector('.md-header__topic');
+      if (options) {
+        options.parentNode.insertBefore(kofi, options);
+      } else {
+        header.appendChild(kofi);
+      }
+    });
+  </script>
+{% endblock %}
