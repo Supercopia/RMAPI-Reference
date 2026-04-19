@@ -19,13 +19,13 @@ RMAPI provides three networking systems built on top of Photon:
 This works out of the box. When you join a match (Map0/Map1):
 
 - RMAPI sends your mod list to the opponent via Photon event code 15
-- When the opponent's list arrives, `Actions.onModStringRecieved` fires
+- When the opponent's list arrives, `Actions.onModStringReceived` fires
 - You can then query the opponent's mods via `Calls.Mods`
 
 **You don't need to write any code for this.** Just subscribe to the event if you want to react:
 
 ```csharp
-Actions.onModStringRecieved += () =>
+Actions.onModStringReceived += () =>
 {
     if (Calls.Mods.doesOpponentHaveMod("MyCoolMod", "", matchVersion: false))
     {

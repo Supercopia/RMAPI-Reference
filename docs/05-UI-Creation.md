@@ -47,19 +47,19 @@ textObj.transform.rotation = Quaternion.identity;
 
 ### Text with Parameters (all-in-one)
 
-```csharp
-GameObject textObj = Create.NewText(
-    text:         "Score: 0",
-    textSize:     1.5f,
-    textColor:    Color.green,
-    textPosition: new Vector3(0, 2.5f, 3),
-    textRotation: Quaternion.Euler(0, 180, 0)
-);
-```
+Parameters in order:
 
-> **Known issue (v5.1.1):** The parameterized `NewText` overload has a bug where it sets
-> position/rotation on the template object instead of the new copy. You may need to set
-> `transform.position` and `transform.rotation` on the returned GameObject yourself to be safe.
+| # | Parameter | Type | What it sets |
+|---|-----------|------|-------------|
+| 1 | `text` | `string` | The displayed text |
+| 2 | `textSize` | `float` | Font size |
+| 3 | `textColor` | `Color` | Text color |
+| 4 | `textPosition` | `Vector3` | World position |
+| 5 | `textRotation` | `Quaternion` | World rotation |
+
+```csharp
+GameObject textObj = Create.NewText("Score: 0", 1.5f, Color.green, new Vector3(0, 2.5f, 3), Quaternion.Euler(0, 180, 0));
+```
 
 ### Updating Text Later
 
@@ -88,6 +88,19 @@ void UpdateScore(int score)
 Buttons use RUMBLE's `InteractionButton` component — players interact with them the same way
 they interact with in-game buttons (by pressing/touching them in VR).
 
+`NewButton` has four versions — pick the one that matches what you need:
+
+| Version | What you get |
+|---------|-------------|
+| `NewButton()` | Button at default position, no action |
+| `NewButton(position, rotation)` | Button at a specific spot, no action |
+| `NewButton(action)` | Button at default position, runs your code when pressed |
+| `NewButton(position, rotation, action)` | Button at a specific spot, runs your code when pressed |
+
+> **Note:** You always need `()` after `Create.NewButton` — writing `Create.NewButton` alone
+> without parentheses doesn't create anything and will cause a compile error.
+> Even `Create.NewButton()` with empty parentheses is valid — it creates a button with defaults.
+
 ### Basic Button (no position, no action)
 
 ```csharp
@@ -96,32 +109,48 @@ GameObject buttonObj = Create.NewButton();
 
 ### Button at a Position
 
+| # | Parameter | Type | What it sets |
+|---|-----------|------|-------------|
+| 1 | `buttonPosition` | `Vector3` | World position |
+| 2 | `buttonRotation` | `Quaternion` | World rotation |
+
 ```csharp
-GameObject buttonObj = Create.NewButton(
-    buttonPosition: new Vector3(1, 1.5f, 2),
-    buttonRotation: Quaternion.Euler(0, 90, 0)
-);
+GameObject buttonObj = Create.NewButton(new Vector3(1, 1.5f, 2), Quaternion.Euler(0, 90, 0));
 ```
 
 ### Button with an Action
 
+| # | Parameter | Type | What it sets |
+|---|-----------|------|-------------|
+| 1 | `action` | `Action` | Method to call when pressed |
+
 Pass a method or lambda that runs when the button is pressed:
 
 ```csharp
-GameObject buttonObj = Create.NewButton(() =>
-{
-    Melon<MyMod>.Logger.Msg("Button was pressed!");
-});
+GameObject buttonObj = Create.NewButton(() => Melon<MyMod>.Logger.Msg("Button was pressed!"));
 ```
+
+> **What's `() =>`?** This is a **lambda** — a short inline function. `() =>` means "a function
+> that takes no parameters", and what follows is the code it runs. There are two ways to pass
+> an action, and both work:
+>
+> **Inline lambda** — write the code directly:
+> `Create.NewButton(() => Melon<MyMod>.Logger.Msg("pressed!"))`
+>
+> **Method reference** — define a method and pass its name (without `()`, because you're
+> handing the method itself to be called later, not calling it now):
+> `Create.NewButton(OnPressed)` where you have `void OnPressed() { ... }` elsewhere.
 
 ### Button with Position and Action
 
+| # | Parameter | Type | What it sets |
+|---|-----------|------|-------------|
+| 1 | `buttonPosition` | `Vector3` | World position |
+| 2 | `buttonRotation` | `Quaternion` | World rotation |
+| 3 | `action` | `Action` | Method to call when pressed |
+
 ```csharp
-GameObject buttonObj = Create.NewButton(
-    buttonPosition: new Vector3(1, 1.5f, 2),
-    buttonRotation: Quaternion.identity,
-    action: () => { DoSomething(); }
-);
+GameObject buttonObj = Create.NewButton(new Vector3(1, 1.5f, 2), Quaternion.identity, () => Melon<MyMod>.Logger.Msg("Button was pressed!"));
 ```
 
 ### Adding an Action to an Existing Button
@@ -203,12 +232,7 @@ namespace Scoreboard
             Vector3 pos = t.position + t.forward * 2 + Vector3.up * 1.5f;
             Quaternion rot = Quaternion.LookRotation(pos - t.position);
 
-            GameObject displayObj = Create.NewText(
-                "0 - 0", 3f, Color.white, pos, rot
-            );
-            // Work around position/rotation bug (see known issue above)
-            displayObj.transform.position = pos;
-            displayObj.transform.rotation = rot;
+            GameObject displayObj = Create.NewText("0 - 0", 3f, Color.white, pos, rot);
             display = displayObj.GetComponent<TextMeshPro>();
         }
 

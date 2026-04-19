@@ -135,7 +135,7 @@ Actions.onMatchStarted += () =>
 ```csharp
 // Get your mod list as a pipe-separated string
 string myModString = Calls.Mods.getMyModString();
-// Example: "RumbleModdingAPI|5.1.1|MyMod|1.0.0"
+// Example: "RumbleModdingAPI|5.1.4|MyMod|1.0.0"
 
 // Get your mod list as structured objects
 List<ModInfo> myMods = Calls.Mods.getMyMods();
@@ -151,7 +151,7 @@ bool hasModAny = Calls.Mods.findOwnMod("SomeMod", "", false);       // any versi
 
 ### Opponent's Mods
 
-These only work **during a match** (Map0/Map1) after `onModStringRecieved` fires.
+These only work **during a match** (Map0/Map1) after `onModStringReceived` fires.
 
 ```csharp
 // Get opponent's mod list as a string
@@ -167,7 +167,7 @@ bool hasItAtAll = Calls.Mods.doesOpponentHaveMod("SharedMod", "", false);       
 
 **Example — Compatibility check:**
 ```csharp
-Actions.onModStringRecieved += () =>
+Actions.onModStringReceived += () =>
 {
     if (Calls.Mods.doesOpponentHaveMod("MyCoolMod", "2.0.0"))
     {
@@ -188,7 +188,7 @@ Actions.onModStringRecieved += () =>
 public class ModInfo
 {
     public string ModName;      // e.g., "RumbleModdingAPI"
-    public string ModVersion;   // e.g., "5.1.1"
+    public string ModVersion;   // e.g., "5.1.4"
 }
 ```
 

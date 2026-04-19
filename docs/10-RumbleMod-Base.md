@@ -163,13 +163,7 @@ namespace SyncCounter
             counter = 0;
 
             // Create a display
-            GameObject textObj = Create.NewText(
-                "Count: 0", 2f, Color.cyan,
-                new Vector3(0, 2, 0), Quaternion.identity
-            );
-            // Work around position/rotation bug (see Chapter 5)
-            textObj.transform.position = new Vector3(0, 2, 0);
-            textObj.transform.rotation = Quaternion.identity;
+            GameObject textObj = Create.NewText("Count: 0", 2f, Color.cyan, new Vector3(0, 2, 0), Quaternion.identity);
             display = textObj.GetComponent<TextMeshPro>();
 
             // Create a button that increments and syncs

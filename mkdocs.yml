@@ -47,6 +47,12 @@ nav:
     - Map0: tree-map0.md
     - Map1: tree-map1.md
 
+extra:
+  social:
+    - icon: simple/kofi
+      link: https://ko-fi.com/ulvakskillz
+      name: Support UlvakSkillz on Ko-fi
+
 extra_css:
   - stylesheets/trees.css
 

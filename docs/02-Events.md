@@ -173,18 +173,21 @@ Actions.onPlayerHealthChanged += (Player player, int damage) =>
 
 ---
 
-### onModStringRecieved
+### onModStringReceived
 
 ```csharp
-public static event Action onModStringRecieved;
+public static event Action onModStringReceived;
 ```
+
+> **Note:** The old spelling `onModStringRecieved` still works but is deprecated.
+> Use `onModStringReceived` (correct spelling) for new code.
 
 **When it fires:** When the opponent's mod list arrives over the network (Map0/Map1 only).
 
 **Use case:** Check mod compatibility, display opponent's mods.
 
 ```csharp
-Actions.onModStringRecieved += () =>
+Actions.onModStringReceived += () =>
 {
     var theirMods = Calls.Mods.getOpponentMods();
     foreach (var mod in theirMods)
@@ -210,7 +213,7 @@ Scene loads (Map0 or Map1)
   ├── onMatchStarted                     ← fires right after map init if 2 players
   ├── onRoundStarted                     ← round 1 (fires right after match start)
   │     │
-  │     ├── onModStringRecieved          ← arrives asynchronously over the network
+  │     ├── onModStringReceived          ← arrives asynchronously over the network
   │     │
   │     ├── onPlayerHealthChanged(...)   ← repeated as hits land
   │     │
@@ -224,7 +227,7 @@ Scene loads (Map0 or Map1)
 ```
 
 > **Note:** `onPlayerSpawned` fires from a separate Harmony patch, so its timing relative to
-> `onMapInitialized` is not guaranteed. `onModStringRecieved` arrives over the network and
+> `onMapInitialized` is not guaranteed. `onModStringReceived` arrives over the network and
 > could fire at any point during the match — don't assume it arrives before the first round.
 
 ---

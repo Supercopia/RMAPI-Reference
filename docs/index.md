@@ -1,6 +1,6 @@
 # RMAPI Reference Book
 
-**RumbleModdingAPI v5.1.1** — The modding framework for RUMBLE (VR)
+**RumbleModdingAPI v5.1.4** — The modding framework for RUMBLE (VR)
 
 This reference is organized into chapters. Each one covers a self-contained feature of RMAPI.
 Pick the chapter that matches what you're trying to do.
@@ -74,3 +74,8 @@ RumbleModdingAPI.RMAPI.GameObjects      // Static GameObject registry
 RumbleModdingAPI.RMAPI.Utilities        // RumbleMod base, ControllerInputPoller, RaiseEventManager
 RumbleModdingAPI.RMAPI.PhotonRPCs       // Custom Photon RPC system
 ```
+
+---
+
+*RMAPI is created and maintained by UlvakSkillz. If you find it useful, consider
+[supporting them on Ko-fi](https://ko-fi.com/ulvakskillz).*
