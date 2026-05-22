@@ -41,6 +41,7 @@ nav:
   - Networking: 08-Networking.md
   - GameObject Registry: 09-GameObject-Registry.md
   - RumbleMod Base Class: 10-RumbleMod-Base.md
+  - Lighting: 11-Lighting.md
   - Object Trees:
     - DDOL: tree-ddol.md
     - Gym: tree-gym.md

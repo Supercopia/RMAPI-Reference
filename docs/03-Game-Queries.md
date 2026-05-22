@@ -24,7 +24,13 @@ bool ready = Calls.IsInitialized();
 
 // Have the current scene's GameObjects been cached?
 bool mapReady = Calls.IsMapInitialized();
+
+// Which RMAPI version is installed? (RumbleModdingAPI namespace, not .RMAPI)
+string apiVersion = RumbleModdingAPI.ModBuildInfo.Version;   // e.g. "5.3.0"
 ```
+
+See [Getting Started](01-Getting-Started.md#checking-the-rmapi-version) for when
+to use the version string.
 
 ---
 
@@ -135,7 +141,7 @@ Actions.onMatchStarted += () =>
 ```csharp
 // Get your mod list as a pipe-separated string
 string myModString = Calls.Mods.getMyModString();
-// Example: "RumbleModdingAPI|5.1.4|MyMod|1.0.0"
+// Example: "RumbleModdingAPI|5.3.0|MyMod|1.0.0"
 
 // Get your mod list as structured objects
 List<ModInfo> myMods = Calls.Mods.getMyMods();
@@ -188,7 +194,7 @@ Actions.onModStringReceived += () =>
 public class ModInfo
 {
     public string ModName;      // e.g., "RumbleModdingAPI"
-    public string ModVersion;   // e.g., "5.1.4"
+    public string ModVersion;   // e.g., "5.3.0"
 }
 ```
 

@@ -1,6 +1,6 @@
 # Chapter 10 — RumbleMod Base Class
 
-[Back to Index](index.md) | [Previous: GameObject Registry](09-GameObject-Registry.md)
+[Back to Index](index.md) | [Previous: GameObject Registry](09-GameObject-Registry.md) | [Next: Lighting](11-Lighting.md)
 
 ---
 
@@ -239,4 +239,4 @@ send data to other players.
 
 ---
 
-[Back to Index](index.md) | [Previous: GameObject Registry](09-GameObject-Registry.md)
+[Back to Index](index.md) | [Previous: GameObject Registry](09-GameObject-Registry.md) | [Next: Lighting](11-Lighting.md)

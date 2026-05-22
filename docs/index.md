@@ -1,6 +1,6 @@
 # RMAPI Reference Book
 
-**RumbleModdingAPI v5.1.4** — The modding framework for RUMBLE (VR)
+**RumbleModdingAPI v5.3.0** — The modding framework for RUMBLE (VR)
 
 This reference is organized into chapters. Each one covers a self-contained feature of RMAPI.
 Pick the chapter that matches what you're trying to do.
@@ -21,6 +21,7 @@ Pick the chapter that matches what you're trying to do.
 | 8 | [Networking](08-Networking.md) | Sending data to other players, custom Photon RPCs, mod exchange |
 | 9 | [GameObject Registry](09-GameObject-Registry.md) | Accessing any built-in GameObject by name (Gym, Park, Map0, Map1) |
 | 10 | [RumbleMod Base Class](10-RumbleMod-Base.md) | Using RumbleMod instead of MelonMod for built-in networking |
+| 11 | [Lighting](11-Lighting.md) | Controlling scene ambient lighting (modes, colors, locking) |
 
 ---
 
@@ -43,6 +44,7 @@ Pick the chapter that matches what you're trying to do.
 | Play a custom sound effect | [Audio](07-Audio.md) |
 | Send data to your opponent | [Networking](08-Networking.md) |
 | Access a specific in-game object | [GameObject Registry](09-GameObject-Registry.md) |
+| Change the scene's ambient lighting | [Lighting](11-Lighting.md) |
 
 ---
 
@@ -73,6 +75,7 @@ RumbleModdingAPI.RMAPI.AudioManager     // Audio loading and playback
 RumbleModdingAPI.RMAPI.GameObjects      // Static GameObject registry
 RumbleModdingAPI.RMAPI.Utilities        // RumbleMod base, ControllerInputPoller, RaiseEventManager
 RumbleModdingAPI.RMAPI.PhotonRPCs       // Custom Photon RPC system
+RumbleModdingAPI.RMAPI.Lighting         // Scene ambient lighting control
 ```
 
 ---

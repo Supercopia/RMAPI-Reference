@@ -67,33 +67,37 @@ GameObjects.DDOL
 │   ├── PreInitializable
 │   │   ├── AudioManager
 │   │   ├── PoolManager
-│   │   │   ├── Pool (Wrapped Wall)
-│   │   │   ├── Pool (Prisoned Pillar)
-│   │   │   ├── Pool (Docked Disk)
-│   │   │   ├── Pool (Cage Cube)
-│   │   │   ├── Pool (Fruit variants)
-│   │   │   ├── Pool (VFX)
-│   │   │   ├── Pool (Match pedestals, slabs, info slabs)
+│   │   │   ├── PoolWrappedWall...
+│   │   │   ├── PoolPrisonedPillar...
+│   │   │   ├── PoolDockedDisk...
 │   │   │   └── ... many more pools
-│   │   ├── SceneManager
-│   │   ├── RecordingCamera
-│   │   └── PlayerManager
+│   │   └── PlayFabHandler
 │   ├── Initializable
-│   │   ├── PlayFabManager
-│   │   ├── MatchmakingHandler
+│   │   ├── NetworkManager
+│   │   ├── PlayerManager
+│   │   ├── SceneManager
+│   │   ├── NotificationManager
+│   │   ├── StackManager
+│   │   ├── GraphicsManager
 │   │   ├── SocialHandler
-│   │   ├── LeaderboardManager
-│   │   ├── DailyShiftStoneManager
-│   │   └── ... more managers
-│   └── PostInitializable
-│       ├── NetworkManager
-│       └── QualityManager
+│   │   ├── SlabManager
+│   │   ├── RecordingCamera
+│   │   ├── CatalogHandler
+│   │   ├── EconomyHandler
+│   │   └── InputManager
+│   ├── Other
+│   │   ├── RaiseEventHandler
+│   │   ├── Layermasks
+│   │   └── CombatManager
+│   └── UI
+│       ├── RecordingUI
+│       └── External
 └── TimerUpdater
 ```
 
 **Example — Access the PlayerManager:**
 ```csharp
-GameObject playerMgr = GameObjects.DDOL.GameInstance.PreInitializable.PlayerManager.GetGameObject();
+GameObject playerMgr = GameObjects.DDOL.GameInstance.Initializable.PlayerManager.GetGameObject();
 ```
 
 ---

@@ -219,6 +219,25 @@ bool mapReady = Calls.IsMapInitialized();
 
 ---
 
+## Checking the RMAPI Version
+
+`ModBuildInfo.Version` is a string constant holding the installed RMAPI version:
+
+```csharp
+using RumbleModdingAPI;
+
+string apiVersion = ModBuildInfo.Version;   // e.g. "5.3.0"
+```
+
+Use it if your mod calls newer RMAPI features and you want to fail gracefully on
+older installs — for example, the `Lighting` class (see [Chapter 11](11-Lighting.md))
+only exists from 5.3.0 onward.
+
+> Note: `ModBuildInfo` lives in the `RumbleModdingAPI` namespace, not
+> `RumbleModdingAPI.RMAPI`.
+
+---
+
 ## Scenes in RUMBLE
 
 RMAPI tracks these scenes:

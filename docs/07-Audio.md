@@ -56,7 +56,7 @@ AudioCall[] sounds = AudioManager.CreateAudioCalls(paths, volume: 0.5f);
 
 ### What Happens Under the Hood
 
-- The .wav file is parsed manually (supports standard PCM WAV)
+- The .wav file is parsed manually — the parser detects the encoding from the file header and supports PCM, IEEE float, MS ADPCM, IMA ADPCM, A-law, and μ-law, including the EXTENSIBLE container format
 - A Unity `AudioClip` is created in memory
 - An `AudioCall` ScriptableObject is created with the clip attached
 - Both are marked `HideAndDontSave` so they persist across scenes
@@ -110,8 +110,8 @@ You can use this clip with your own `AudioSource` components.
 
 ## Requirements and Limitations
 
-- **Only .wav files** are supported (not .mp3, .ogg, etc.)
-- The .wav must be standard **PCM format** (16-bit)
+- **Only .wav files** are supported (not .mp3, .ogg, etc.) — but most WAV encodings work: PCM (8/16/24/32/64-bit), IEEE float, MS/IMA ADPCM, and A-law/μ-law
+- If a file fails to load, RMAPI logs the reason (corrupt header, unsupported format tag, etc.) — check the MelonLoader console
 - Create your `AudioCall` objects **once** (e.g., at startup) — don't recreate them every time you play
 - Sounds are **3D positional** — they get quieter with distance from the listener
 

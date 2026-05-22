@@ -1241,10 +1241,16 @@ These are the exact class names you use in code, e.g.:
 - `NameCanvas`
 - `RankCanvas`
 - `PointCanvas`
-- `UnusedIcon`
 - `FriendStatusIconBackground`
-- `IgnoreIcon`
 - `FriendStatusIcon`
+<details>
+<summary><code>RegionIndicator</code></summary>
+
+- `RegionIcon`
+- `RegionText`
+</details>
+
+- `IgnoreIcon`
 </details>
 
 - `AttentionPoint`
@@ -1277,10 +1283,16 @@ These are the exact class names you use in code, e.g.:
 - `NameCanvas`
 - `RankCanvas`
 - `PointCanvas`
-- `UnusedIcon`
 - `FriendStatusIconBackground`
-- `IgnoreIcon`
 - `FriendStatusIcon`
+<details>
+<summary><code>RegionIndicator</code></summary>
+
+- `RegionIcon`
+- `RegionText`
+</details>
+
+- `IgnoreIcon`
 </details>
 
 - `AttentionPoint`
@@ -1313,10 +1325,16 @@ These are the exact class names you use in code, e.g.:
 - `NameCanvas`
 - `RankCanvas`
 - `PointCanvas`
-- `UnusedIcon`
 - `FriendStatusIconBackground`
-- `IgnoreIcon`
 - `FriendStatusIcon`
+<details>
+<summary><code>RegionIndicator</code></summary>
+
+- `RegionIcon`
+- `RegionText`
+</details>
+
+- `IgnoreIcon`
 </details>
 
 - `AttentionPoint`
@@ -1349,10 +1367,16 @@ These are the exact class names you use in code, e.g.:
 - `NameCanvas`
 - `RankCanvas`
 - `PointCanvas`
-- `UnusedIcon`
 - `FriendStatusIconBackground`
-- `IgnoreIcon`
 - `FriendStatusIcon`
+<details>
+<summary><code>RegionIndicator</code></summary>
+
+- `RegionIcon`
+- `RegionText`
+</details>
+
+- `IgnoreIcon`
 </details>
 
 - `AttentionPoint`
@@ -1385,10 +1409,16 @@ These are the exact class names you use in code, e.g.:
 - `NameCanvas`
 - `RankCanvas`
 - `PointCanvas`
-- `UnusedIcon`
 - `FriendStatusIconBackground`
-- `IgnoreIcon`
 - `FriendStatusIcon`
+<details>
+<summary><code>RegionIndicator</code></summary>
+
+- `RegionIcon`
+- `RegionText`
+</details>
+
+- `IgnoreIcon`
 </details>
 
 - `AttentionPoint`
@@ -1421,10 +1451,16 @@ These are the exact class names you use in code, e.g.:
 - `NameCanvas`
 - `RankCanvas`
 - `PointCanvas`
-- `UnusedIcon`
 - `FriendStatusIconBackground`
-- `IgnoreIcon`
 - `FriendStatusIcon`
+<details>
+<summary><code>RegionIndicator</code></summary>
+
+- `RegionIcon`
+- `RegionText`
+</details>
+
+- `IgnoreIcon`
 </details>
 
 - `AttentionPoint`
@@ -1552,10 +1588,16 @@ These are the exact class names you use in code, e.g.:
 - `NameCanvas`
 - `RankCanvas`
 - `PointCanvas`
-- `UnusedIcon`
 - `FriendStatusIconBackground`
-- `IgnoreIcon`
 - `FriendStatusIcon`
+<details>
+<summary><code>RegionIndicator</code></summary>
+
+- `RegionIcon`
+- `RegionText`
+</details>
+
+- `IgnoreIcon`
 </details>
 
 - `AttentionPoint`
@@ -1827,10 +1869,16 @@ These are the exact class names you use in code, e.g.:
 - `NameCanvas`
 - `RankCanvas`
 - `PointCanvas`
-- `UnusedIcon`
 - `FriendStatusIconBackground`
-- `IgnoreIcon`
 - `FriendStatusIcon`
+<details>
+<summary><code>RegionIndicator</code></summary>
+
+- `RegionIcon`
+- `RegionText`
+</details>
+
+- `IgnoreIcon`
 </details>
 
 - `AttentionPoint`
@@ -2064,10 +2112,16 @@ These are the exact class names you use in code, e.g.:
 - `NameCanvas`
 - `RankCanvas`
 - `PointCanvas`
-- `UnusedIcon`
 - `FriendStatusIconBackground`
-- `IgnoreIcon`
 - `FriendStatusIcon`
+<details>
+<summary><code>RegionIndicator</code></summary>
+
+- `RegionIcon`
+- `RegionText`
+</details>
+
+- `IgnoreIcon`
 </details>
 
 - `AttentionPoint`
@@ -2100,10 +2154,16 @@ These are the exact class names you use in code, e.g.:
 - `NameCanvas`
 - `RankCanvas`
 - `PointCanvas`
-- `UnusedIcon`
 - `FriendStatusIconBackground`
-- `IgnoreIcon`
 - `FriendStatusIcon`
+<details>
+<summary><code>RegionIndicator</code></summary>
+
+- `RegionIcon`
+- `RegionText`
+</details>
+
+- `IgnoreIcon`
 </details>
 
 - `AttentionPoint`
@@ -2136,10 +2196,16 @@ These are the exact class names you use in code, e.g.:
 - `NameCanvas`
 - `RankCanvas`
 - `PointCanvas`
-- `UnusedIcon`
 - `FriendStatusIconBackground`
-- `IgnoreIcon`
 - `FriendStatusIcon`
+<details>
+<summary><code>RegionIndicator</code></summary>
+
+- `RegionIcon`
+- `RegionText`
+</details>
+
+- `IgnoreIcon`
 </details>
 
 - `AttentionPoint`
@@ -2172,10 +2238,16 @@ These are the exact class names you use in code, e.g.:
 - `NameCanvas`
 - `RankCanvas`
 - `PointCanvas`
-- `UnusedIcon`
 - `FriendStatusIconBackground`
-- `IgnoreIcon`
 - `FriendStatusIcon`
+<details>
+<summary><code>RegionIndicator</code></summary>
+
+- `RegionIcon`
+- `RegionText`
+</details>
+
+- `IgnoreIcon`
 </details>
 
 - `AttentionPoint`
@@ -2208,10 +2280,16 @@ These are the exact class names you use in code, e.g.:
 - `NameCanvas`
 - `RankCanvas`
 - `PointCanvas`
-- `UnusedIcon`
 - `FriendStatusIconBackground`
-- `IgnoreIcon`
 - `FriendStatusIcon`
+<details>
+<summary><code>RegionIndicator</code></summary>
+
+- `RegionIcon`
+- `RegionText`
+</details>
+
+- `IgnoreIcon`
 </details>
 
 - `AttentionPoint`
@@ -2244,10 +2322,16 @@ These are the exact class names you use in code, e.g.:
 - `NameCanvas`
 - `RankCanvas`
 - `PointCanvas`
-- `UnusedIcon`
 - `FriendStatusIconBackground`
-- `IgnoreIcon`
 - `FriendStatusIcon`
+<details>
+<summary><code>RegionIndicator</code></summary>
+
+- `RegionIcon`
+- `RegionText`
+</details>
+
+- `IgnoreIcon`
 </details>
 
 - `AttentionPoint`
@@ -2317,10 +2401,16 @@ These are the exact class names you use in code, e.g.:
 - `NameCanvas`
 - `RankCanvas`
 - `PointCanvas`
-- `UnusedIcon`
 - `FriendStatusIconBackground`
-- `IgnoreIcon`
 - `FriendStatusIcon`
+<details>
+<summary><code>RegionIndicator</code></summary>
+
+- `RegionIcon`
+- `RegionText`
+</details>
+
+- `IgnoreIcon`
 </details>
 
 - `AttentionPoint`
@@ -2373,10 +2463,16 @@ These are the exact class names you use in code, e.g.:
 - `NameCanvas`
 - `RankCanvas`
 - `PointCanvas`
-- `UnusedIcon`
 - `FriendStatusIconBackground`
-- `IgnoreIcon`
 - `FriendStatusIcon`
+<details>
+<summary><code>RegionIndicator</code></summary>
+
+- `RegionIcon`
+- `RegionText`
+</details>
+
+- `IgnoreIcon`
 </details>
 
 - `AttentionPoint`
@@ -3039,10 +3135,16 @@ These are the exact class names you use in code, e.g.:
 - `NameCanvas`
 - `RankCanvas`
 - `PointCanvas`
-- `UnusedIcon`
 - `FriendStatusIconBackground`
-- `IgnoreIcon`
 - `FriendStatusIcon`
+<details>
+<summary><code>RegionIndicator</code></summary>
+
+- `RegionIcon`
+- `RegionText`
+</details>
+
+- `IgnoreIcon`
 </details>
 
 - `AttentionPoint`
@@ -3075,10 +3177,16 @@ These are the exact class names you use in code, e.g.:
 - `NameCanvas`
 - `RankCanvas`
 - `PointCanvas`
-- `UnusedIcon`
 - `FriendStatusIconBackground`
-- `IgnoreIcon`
 - `FriendStatusIcon`
+<details>
+<summary><code>RegionIndicator</code></summary>
+
+- `RegionIcon`
+- `RegionText`
+</details>
+
+- `IgnoreIcon`
 </details>
 
 - `AttentionPoint`
@@ -3111,10 +3219,16 @@ These are the exact class names you use in code, e.g.:
 - `NameCanvas`
 - `RankCanvas`
 - `PointCanvas`
-- `UnusedIcon`
 - `FriendStatusIconBackground`
-- `IgnoreIcon`
 - `FriendStatusIcon`
+<details>
+<summary><code>RegionIndicator</code></summary>
+
+- `RegionIcon`
+- `RegionText`
+</details>
+
+- `IgnoreIcon`
 </details>
 
 - `AttentionPoint`
@@ -3147,10 +3261,16 @@ These are the exact class names you use in code, e.g.:
 - `NameCanvas`
 - `RankCanvas`
 - `PointCanvas`
-- `UnusedIcon`
 - `FriendStatusIconBackground`
-- `IgnoreIcon`
 - `FriendStatusIcon`
+<details>
+<summary><code>RegionIndicator</code></summary>
+
+- `RegionIcon`
+- `RegionText`
+</details>
+
+- `IgnoreIcon`
 </details>
 
 - `AttentionPoint`
@@ -3183,10 +3303,16 @@ These are the exact class names you use in code, e.g.:
 - `NameCanvas`
 - `RankCanvas`
 - `PointCanvas`
-- `UnusedIcon`
 - `FriendStatusIconBackground`
-- `IgnoreIcon`
 - `FriendStatusIcon`
+<details>
+<summary><code>RegionIndicator</code></summary>
+
+- `RegionIcon`
+- `RegionText`
+</details>
+
+- `IgnoreIcon`
 </details>
 
 - `AttentionPoint`
@@ -3219,10 +3345,16 @@ These are the exact class names you use in code, e.g.:
 - `NameCanvas`
 - `RankCanvas`
 - `PointCanvas`
-- `UnusedIcon`
 - `FriendStatusIconBackground`
-- `IgnoreIcon`
 - `FriendStatusIcon`
+<details>
+<summary><code>RegionIndicator</code></summary>
+
+- `RegionIcon`
+- `RegionText`
+</details>
+
+- `IgnoreIcon`
 </details>
 
 - `AttentionPoint`
